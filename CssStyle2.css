@@ -1,0 +1,279 @@
+*{
+    scroll-behavior: smooth;
+}
+
+.Etiquette{
+    background-color: aqua;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cadre{
+    background-color: #FBAB7E;
+    background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    padding-top:5%;
+    padding-left: 1%;
+}
+
+.Accueil{
+    background-image: linear-gradient(62deg, #838281 0%, #d3c9a0 100%);
+}
+
+.Loupe{
+    font-size: 32px;
+}
+
+.cadre>P{
+    color: black;
+    font-family: "Trebuchet MS", Courier, monospace;
+}
+
+
+.buttonCalculer{
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 94%;
+    height: 15%;
+    box-shadow:inset 0px 15px 0px 0px #ffffff;
+	background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+	background-color:#ffffff;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	cursor:pointer;
+	color:#666666;
+    font-family: "Trebuchet MS", Courier, monospace;
+	font-size:26px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffffff;
+    opacity: 50%;
+    transition: all 0.5s;
+}
+
+.buttonCalculer:hover {
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
+    opacity: 100%;
+	font-size:30px;
+}
+.buttonCalculer:active {
+    position: absolute;
+    opacity: 100%;
+	top: 87%;
+}
+
+.selectionSituation{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.selectionSituation2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.buttonSelection{
+    width: 19%;
+    height: 15%;
+    box-shadow:inset 0px 15px -1px 0px #ffffff;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	cursor:pointer;
+	color:#666666;
+    font-family: "Trebuchet MS", Courier, monospace;
+	font-size:26px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-shadow:0px 1px 0px #ffffff;
+    opacity: 70%;
+    transition: all 0.5s;
+    margin: 22px;
+}
+
+.buttonSelection:hover {
+    text-decoration-line: none;
+	background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+	background-color:#f6f6f6;
+    opacity: 100%;
+	font-size:30px;
+}
+.buttonSelection:active {
+    opacity: 100%;
+}
+.Paie{
+    text-decoration: none;
+}
+
+.Paie:hover{
+    background-image: linear-gradient(0deg, #FBAB7E 0%, #F7CE68 100%);
+}
+.droitDuTaff:hover{
+    background-image: linear-gradient(0deg, #ffffff 0%, #e5f1f9 100%);
+}
+.IA:hover{
+    background-image: linear-gradient(0deg, #fbec7e 0%, #ced460 100%);
+}
+
+.droitTaff{
+    background-image: linear-gradient(0deg, #ffffff 0%, #e5f1f9 100%);
+}
+
+.grandButton{
+    width: 64%;
+    height: 15%;
+}
+
+.texteDaccroche{
+    font-family: "Trebuchet MS", Courier, monospace;
+        font-size: 25px;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        color: #000000;
+        font-weight: normal;
+        text-decoration: none;
+        font-style: normal;
+        font-variant: normal;
+}
+.textDaccrocheFleche{
+    color: #c0e12a;
+        font-size: 44px;
+}
+
+#TableauDetail{
+    background-image: linear-gradient(120deg, #65f6ab 0%, #85fde5 100%);
+    display: grid;
+    width: 100%;
+    height: 100%;
+    margin-left: 0%;
+    margin-right: 5%;
+    padding-left: 2%;
+    grid-template-columns: 38% 29%;
+    grid-row-gap: 40px;
+    grid-column-gap: 40px;
+    grid-template-rows: 76px 34px 34px 34px 34px 34px 34px;
+    grid-template-areas:
+    "Titre Titre"
+    "texte1 heureMensuel"
+    "texte2 NBheureSupSemaine"
+    "texte3 NBheureSupMois"
+    "texte4 salaireHoraire35h"
+    "texte5 salaireMensuel35h"
+    "texte6 salaireHS"
+}
+
+.TitreTableauDetail{
+    text-decoration: underline solid yellow;
+    font-family: "Trebuchet MS", Courier, monospace;
+    font-size: 56px;
+    letter-spacing: 9px;
+    grid-area: Titre;
+   }
+
+.texte1{
+    grid-area: texte1;
+   }
+
+.heureMensuel{
+    grid-area: heureMensuel;
+   }
+
+.texte2{
+    grid-area: texte2;
+   }
+
+.NBheureSupSemaine{
+    grid-area: NBheureSupSemaine;
+   }
+   
+.texte3{
+    grid-area: texte3;
+   }
+
+.NBheureSupMois{
+    grid-area: NBheureSupMois;
+   }
+
+.texte4{
+    grid-area: texte4;
+   }
+
+.salaireHoraire35h{
+    grid-area: salaireHoraire35h;
+   }
+
+.texte5{
+    grid-area: texte5;
+   }
+
+.salaireMensuel35h{
+    grid-area: salaireMensuel35h;
+   }
+
+.texte6{
+    grid-area: texte6;
+   }
+
+.salaireHS{
+    grid-area: salaireHS;
+   }
+
+
+.sujetPrio{
+    background-image: linear-gradient(90deg, #ffffff 0%, #e5f1f9 100%);
+    width: 100%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding : 10px 25px;
+    margin-bottom: 10px;
+    transition: all 0.5s;
+}
+
+.emogi{
+    animation: emogiAnimation 0.5s ease 0s  alternate-reverse forwards;
+}
+
+/* Animation de l'émogi */
+@keyframes emogiAnimation {
+    from {
+      font-size: 56px;
+    }
+    to {
+        font-size: 66px;
+    }
+  }
+
+.sujetPrio:hover{
+    color: rgb(155, 174, 28);
+    background-image: linear-gradient(90deg,#e5f1f9 100%, #ffffff 1%);
+    width: 51%;
+    height: 7%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+	cursor:pointer;
+}
+
+.titreSujetPrio{
+    font-family: "Trebuchet MS", Courier, monospace;
+    margin-right: 15px;
+}
+
+#leSmic{
+    margin: 10px;
+}

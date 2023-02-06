@@ -1,0 +1,274 @@
+/* .tableau{
+    position: relative;
+    display: grid;
+    margin: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px;
+    grid-gap: 14px;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 0;
+    grid-template-areas:
+  "TitreTableau TitreTableau TitreTableau TitreTableau"
+  "EtiquetteTableauVide EtiquetteTableauQT EtiquetteTableauPU EtiquetteTableauTOTAL"
+  "NomOrdi InputQuantity CalculTotalRow1"
+  "NomEcran InputQuantity CalculTotalRow2"
+  "NomImprimante InputQuantity CalculTotalRow3"
+  "TextTHT CalculTotalHT"
+  "TextTVA CalculTotalTVA"
+  "ButtonCalculer ButtonEnvoyer CalculTotalTOTAL"
+   }
+
+   .tableau>DIV{
+    width: 30PX;
+    height: 30PX;
+   }
+
+/* Etiquette tableau */
+   /* .Titre{
+    grid-area: TitreTableau;
+    background-color: yellow;
+   }
+   .EtiquetteTableauVide{
+    grid-area: EtiquetteTableauVide;
+    background-color: yellow;
+   }
+
+   .EtiquetteTableauQT{
+    grid-area: EtiquetteTableauQT;
+    background-color: yellow;
+   }
+   .EtiquetteTableauPU{
+    grid-area: EtiquetteTableauPU;
+    background-color: yellow;
+   }
+   .EtiquetteTableauTOTAL{
+    grid-area: EtiquetteTableauTOTAL;
+    background-color: yellow;
+   }
+
+
+   .NomOrdi{
+    grid-area: NomOrdi;background-color: purple;
+   }
+
+   .NomEcran{
+    grid-area: NomEcran;
+    background-color: peru;
+   }
+   .NomImprimante{
+    grid-area: NomImprimante;
+    background-color: palegreen;
+   }
+
+   .InputQuantity{
+    grid-area: InputQuantity;
+    background-color: palevioletred;
+   }
+
+
+   .CalculTotalRow1{
+    grid-area: CalculTotalRow1;
+    background-color: blue;
+   }
+
+   .CalculTotalRow2{
+    grid-area: CalculTotalRow2;
+    background-color: grey;
+   }
+   .CalculTotalRow3{
+    grid-area: CalculTotalRow3;
+    background-color: gold;
+   }
+
+
+
+
+   .TextTHT{
+    grid-area: TextTHT;
+    background-color: burlywood;
+   }
+   .CalculTotalHT{
+    grid-area: CalculTotalHT;
+    background-color: yellowgreen;
+   }
+
+   .TextTVA{
+    grid-area: TextTVA;
+    background-color: orangered;
+   }
+   .CalculTotalTVA{
+    grid-area: CalculTotalTVA;
+    background-color: orange;
+   }
+   
+   .ButtonCalculer{
+    grid-area: ButtonCalculer;
+    background-color: black;
+   }
+   .ButtonEnvoyer{
+    grid-area: ButtonEnvoyer;
+    background-color: red;
+   }
+   .CalculTotalTOTAL{
+    background-color: beige;
+    grid-area: CalculTotalTOTAL;
+   } */ 
+
+   section{
+    width: 100%;
+    height: 100%;
+    background-color: beige;
+    display: flex;
+    flex-direction: column;    
+}
+
+section>div{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    height: 30%;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin-right: 5PX;
+}
+
+.calculer{
+    width: 159px;
+    height: 62px;
+    margin-bottom: -57px;
+}
+
+.Ligne1{
+    width: 100%;
+}
+
+.Ligne1>P{
+    width: 254px;
+height: 21px;
+margin-left: 0;
+margin-right: 35px;
+}
+
+.Ligne2{
+    background-color: aqua;
+    width: 100%;
+}
+
+
+.Ligne2>input{
+    width: 176px;
+height: 28px;
+margin-right: 74px;
+margin-left: 74px;
+margin-top: 10px;
+}
+
+.Ligne3{
+    background-color: yellow;
+    width: 100%;
+}
+
+.Ligne3>input{
+    width: 176px;
+height: 28px;
+margin-right: 23px;
+margin-left: 124px;
+margin-top: 10px;
+}
+
+.Ligne4{
+    background-color: orange;
+    width: 100%;
+}
+
+
+.Ligne4>input{
+    width: 176px;
+height: 28px;
+margin-right: 74px;
+margin-left: 74px;
+margin-top: 10px;
+}
+
+.Ligne5{
+    background-color: yellowgreen;
+    width: 100%;
+}
+
+.Ligne5>input{
+    width: 836px;
+    height: 32px;
+    margin-right: 74px;
+    margin-left: 145px;
+    margin-top: 10px;
+}
+
+.Ligne6{
+    background-color: purple;
+    width: 100%;
+}
+
+
+.Ligne6>input{
+    width: 835px;
+    height: 26px;
+    margin-right: 74px;
+    margin-left: 145px;
+    margin-top: 10px;
+}
+
+.Ligne7{
+    background-color: plum;
+    width: 100%;
+}
+
+.Ligne7>button{
+    width: 136px;
+height: 41px;
+margin-left: 8px;
+margin-right: 17px;
+}
+
+.Ligne7>input{
+    width: 582px;
+    height: 27px;
+    margin-right: 74px;
+    margin-left: 27px;
+    margin-top: 8px;
+}
+
+.Etiquette{
+    width: 100%;
+    height: 30PX;
+    background-color: aqua;
+}
+
+.Etiquette>p{
+    width: 241px;
+    height: 11px;
+    margin-left: 211PX;
+    margin-right: -98px;
+}
+
+.Etiquette>div{
+    margin-top: 2px;
+    margin-bottom: 2px;
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+    height: 30%;
+    justify-content: flex-start;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin-right: 5PX;
+}
