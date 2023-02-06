@@ -58,14 +58,17 @@ function CalculerConvertisseur() {
     console.log(salaireHoraire35h.toFixed(2));
 
     const salaireMensuel35h =
-  document.querySelector(".salaireMensuel35h").value =
-    document.querySelector(".salaireHoraire35h").value * 151.67;
-console.log(salaireMensuel35h.toFixed(2));
+                              document.querySelector(".salaireMensuel35h").value =
+                                document.querySelector(".salaireHoraire35h").value * 151.67;
+                            console.log(salaireMensuel35h.toFixed(2));
 
     const salaireHS =
-  document.querySelector(".salaireHS").value =
-  document.querySelector(".salaireHoraire35h").value * document.querySelector(".NBheureSupMois").value;
-console.log(salaireHS.toFixed(2));
+                        document.querySelector(".salaireHS").value =
+                        document.querySelector(".salaireHoraire35h").value * document.querySelector(".NBheureSupMois").value;
+                      console.log(salaireHS.toFixed(2));
+
+const affichageResultat = document.querySelector("#TableauDetail");
+affichageResultat.style.display = "grid";
 
 
   if (timeWeek < 35) {
@@ -78,9 +81,13 @@ console.log(salaireHS.toFixed(2));
 }
 
 const boutonCalcul = document.querySelector(".calculer");
-const affichageResultat = document.querySelector(".TableauDetail");
+
 boutonCalcul.addEventListener("click", CalculerConvertisseur());
 /* Le "Click" ci dessus fait la même action que "onclick="CalculerConvertisseur();" présent dans le HTML */
+
+
+
+const buttonCalcul = document.querySelector("#buttonCalculer");
 
 
 // Création du paragraphe récapitulatif du résultat :

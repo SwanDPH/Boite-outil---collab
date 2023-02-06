@@ -39,7 +39,7 @@
 .buttonCalculer{
     background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
     position: absolute;
-    top: 85%;
+    top: 88%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 94%;
@@ -154,8 +154,8 @@
 }
 
 #TableauDetail{
+    display: none;
     background-image: linear-gradient(120deg, #65f6ab 0%, #85fde5 100%);
-    display: grid;
     width: 100%;
     height: 100%;
     margin-left: 0%;
