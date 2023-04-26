@@ -242,6 +242,64 @@
     padding : 10px 25px;
     margin-bottom: 10px;
     transition: all 0.5s;
+    position: relative;
+}
+
+.divInfo{
+    display: none;
+    color: black;
+    border: solid black 2px;
+    background-color: rgb(220, 220, 220);
+    position: absolute;
+    left: 2%;
+    top: 18%;
+    width: 93%;
+    transition: all 0.2s ease-in;
+}
+
+.divInfo.active{
+    display: block;
+    color: black;
+    border: solid black 2px;
+    background-color: rgb(220, 220, 220);
+    position: absolute;
+    left: 2%;
+    top: 118%;
+    width: 193%;
+    transition: all 0.2s ease-in;
+}
+
+
+
+
+.voirMoinsInfos{
+    display: flex;
+    margin-left: 1%;
+    color: red;
+    font-weight: 500;
+}
+
+.voirMoinsInfos::before{
+    background: red;
+    content: "";
+    display: block;
+    width: 0px;
+    bottom: 16px;
+    height: 2px;
+    left: 13px;
+    position: absolute;
+    transition: 0.2s all ease-in;
+}
+
+.voirMoinsInfos:hover:before{
+    background: red;
+    content: "";
+    display: block;
+    width: 81px;
+    bottom: 16px;
+    height: 3px;
+    left: 13px;
+    position: absolute;
 }
 
 .emogi{
@@ -277,3 +335,13 @@
 #leSmic{
     margin: 10px;
 }
+
+
+.voirMoinsInfos2{
+    border: 5px yellow solid;
+}
+
+
+
+
+

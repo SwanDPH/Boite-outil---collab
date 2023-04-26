@@ -30,8 +30,8 @@ function Calculer() {
 // const salaireHS = salaireHoraire35h * NBheureSupMois;
 // const total = salaireMensuel35h + salaireHS;
 
-let timeWeek = document.querySelector(".Heure").value;
-let salary = document.getElementById("salaire").value;
+let timeWeek = document.querySelector(".Heure");
+let salary = document.querySelector("#salaire");
 
 let nb = 999;
 let STR = `ABS ${nb}`;
@@ -82,7 +82,7 @@ affichageResultat.style.display = "grid";
 
 const boutonCalcul = document.querySelector(".calculer");
 
-boutonCalcul.addEventListener("click", CalculerConvertisseur());
+    // boutonCalcul.addEventListener("click", CalculerConvertisseur());
 /* Le "Click" ci dessus fait la même action que "onclick="CalculerConvertisseur();" présent dans le HTML */
 
 
@@ -92,11 +92,11 @@ const buttonCalcul = document.querySelector("#buttonCalculer");
 
 // Création du paragraphe récapitulatif du résultat :
 const paragrapheResult = document.createElement("h1")
-paragrapheResult.innerHTML = `Concrètement, à chaque heure réalisé au delà de 35h, tu seras payé
- ${salaireHS}`
-const emplacementParagrapheResult = document.querySelector("#positionParagrapheRésult")
-//a créer dans le HTML
-emplacementParagrapheResult.appendChild(paragrapheResult)
+// paragrapheResult.innerHTML = `Concrètement, à chaque heure réalisé au delà de 35h, tu seras payé
+//  ${salaireHS}`
+// const emplacementParagrapheResult = document.querySelector("#positionParagrapheRésult")
+// //a créer dans le HTML
+// emplacementParagrapheResult.appendChild(paragrapheResult)
 
 // CONVERTISSEUR TEMPS PARTIEL
 
@@ -135,3 +135,21 @@ console.log(myCar.isRunning); // false
 
 var peugeot106 = new Car ("Peugeot", "supra", "2020");
 peugeot106.start()
+
+
+
+
+
+//Affichage zone Information "Ddroit du travail"
+
+let droitDuTravailElement = document.querySelector('.sujetPrio')
+let droitDuTravailElementInfos = document.querySelector('.divInfo')
+let voirMoins = document.querySelector('.voirMoinsInfos')
+
+
+function deroulementInfos() {
+    droitDuTravailElement.style.width= "51%"
+    droitDuTravailElementInfos.classList.toggle('active')
+}
+
+droitDuTravailElement.addEventListener('click', deroulementInfos)
